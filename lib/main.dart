@@ -1,6 +1,7 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
+import 'package:loginpage/Home.dart';
 // import 'Login.dart';
 
 void main() {
@@ -86,7 +87,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   textColor: Colors.white,
                   minWidth: 129,
                   height: 40,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder:(context) => const Homee() ) );
+                  },
                 ),
               ),
             ),
